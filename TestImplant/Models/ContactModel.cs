@@ -8,14 +8,14 @@ namespace TestImplant.Models
 {
     public class ContactModel
     {
-        [Required(ErrorMessage = "Requis")]
-        public string Name { get; set; }
+        [Required(ErrorMessage = "Nom requis")]
+        public string Nom { get; set; }
 
         [Required]
-        [RegularExpression("@.*@")]
+        [RegularExpression(@".*@.*", ErrorMessage="Veuillez inscrire un email valide")]
         public string Email { get; set; }
 
-        [Required]
-        public string Comments { get; set; }
+        [Required(ErrorMessage = "Commentaire requis")]
+        public string Commentaires { get; set; }
     }
 }

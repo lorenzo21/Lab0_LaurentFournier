@@ -7,19 +7,19 @@
 
 @using (Html.BeginForm())
 {
-    @Html.LabelFor(model => model.Name)<br />
-    @Html.TextBoxFor(model => model.Name)<br />
-    @Html.ValidationMessageFor(model => model.Name)<br />
+    @Html.LabelFor(model => model.Nom)<br />
+    @Html.TextBoxFor(model => model.Nom)<br />
+    @Html.ValidationMessageFor(model => model.Nom)<br />
     
     @Html.LabelFor(model => model.Email)<br />
     @Html.TextBoxFor(model => model.Email)<br />
     @Html.ValidationMessageFor(model => model.Email)<br />
     
-    @Html.LabelFor(model => model.Comments)<br />
-    @Html.TextAreaFor(model => model.Comments)<br />
-    @Html.ValidationMessageFor(model => model.Comments)<br />
+    @Html.LabelFor(model => model.Commentaires)<br />
+    @Html.TextAreaFor(model => model.Commentaires)<br />
+    @Html.ValidationMessageFor(model => model.Commentaires)<br />
     
-    <button type = submit>Submit</button>
+    <button type = submit>Soumettre</button>
     
     
 }

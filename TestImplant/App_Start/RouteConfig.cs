@@ -13,19 +13,12 @@ namespace TestImplant
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            /*routes.MapRoute(
-                "Allo",
-                "{order}",
-                new { controller = "Test", action = "Index", order = "dystopia" }
-            );*/
-
             routes.MapRoute(
                 "Contact",
                 "",
                 new { controller = "Contact", action = "ContactForm" }
             );
 
-            
         }
     }
 }

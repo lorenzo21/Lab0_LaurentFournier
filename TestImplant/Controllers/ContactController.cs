@@ -23,8 +23,8 @@ namespace TestImplant.Controllers
         {
             if (ModelState.IsValid)
             {
-                InsertContact(model.Name, model.Email, model.Comments);
-                TempData["notice"] = "submitted successfully";
+                InsertContact(model.Nom, model.Email, model.Commentaires);
+                TempData["notice"] = "Soumis avec succès";
                 return RedirectToAction("Index", "Home");
             }
             return View();
@@ -32,7 +32,7 @@ namespace TestImplant.Controllers
 
         private void InsertContact(string name, string email, string comments)
         {
-            
+            // code pour conserver le contact, mais pas requis pour l'exercice...
         }
     }
 }
